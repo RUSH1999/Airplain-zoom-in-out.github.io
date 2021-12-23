@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>World Tour</title>
+</head>
+<body>
+	<section>
+		
+			<div class="plain">
+				<img src="airplain.png">
+
+				<div class="glob">
+				</div>
+			</div>
+		
+		
+	</section>
+
+	<style type="text/css">
+		body
+		{
+			background-repeat: no-repeat;
+			min-height: 100vh;
+			width: 100vw;
+			
+		}
+		section
+		{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			width: 100vw;
+		}
+		
+		.glob
+		{
+			background-image: url(glob2.gif);
+			height: 280px;
+			width: 280px;
+		}
+		
+		.plain img
+		{
+			position: relative;
+			top: 190px;
+			left: 80px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 120px;
+			width: 120px;
+			transform: rotate(270deg);
+			z-index: 1;
+			animation: plain 9s linear;
+			animation-delay: 2s;
+		}
+		@keyframes plain 
+		{
+			0%
+			{
+				height: 120px;
+				width: 120px;				
+			}
+			5%
+			{
+				height: 250px;
+				width: 250px;
+			}
+			10%
+			{
+				height: 120px;
+				width: 120px;
+			}
+			20%
+			{
+				height: 120px;
+				width: 120px;
+			}
+			30%
+			{
+				height: 150px;
+				width: 150px;
+			}
+			40%
+			{
+				height: 150px;
+				width: 150px;
+			}
+			50%
+			{
+				height: 150px;
+				width: 150px;
+			}
+			60%
+			{
+				height: 150px;
+				width: 150px;
+			}
+			70%
+			{
+				height: 170px;
+				width: 170px;
+			}
+			75%
+			{
+				
+				height: 120px;
+				width: 120px;
+			
+			}
+			90%
+			{
+				height: 120px;
+				width: 120px;
+			}
+			95%
+			{
+				height: 120px;
+				width: 120px;
+			}
+			100%
+			{
+				height: 120px;
+				width: 120px;
+			}
+		}
+		
+
+
+		.plain img ~ .glob
+		{
+			
+			animation: animate 9s linear;
+			animation-delay: 2s;
+			 
+		}
+		@keyframes animate 
+		{
+			0%
+			{
+				transform: scale(2);
+			}
+			5%
+			{
+				transform: scale(10);
+			}
+
+			10%
+			{
+				transform: scale(10);
+			}
+			20%
+			{
+				transform: scale(10);
+			}
+			30%
+			{
+				transform: scale(10);
+			}
+			40%
+			{
+				transform: scale(10);
+			}
+			50%
+			{
+				transform: scale(10);
+			}
+			60%
+			{
+				transform: scale(10);
+			}
+			70%
+			{
+				transform: scale(1);
+			}
+			80%
+			{
+				transform: scale(1);
+			}
+			90%
+			{
+				transform: scale(1);
+			}
+
+			100%
+			{
+				transform: scale(1);
+			}
+		}
+	</style>
+</body>
+</html>
